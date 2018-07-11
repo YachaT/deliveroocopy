@@ -61,17 +61,17 @@ class Home extends Component {
             </div>
           </div>
         </div>
+        <div className="main">
+          <div className="wrapblock">
+            <Title text="Brunchs" />
+            <div className="foodblock">{brunch}</div>
 
-        <div className="wrapblock">
-          <Title text="Brunchs" />
-
-          <div className="brunchrow">
-            {brunch}
+            <Title text="Petit déjeuner" />
+            <div className="foodblock"> {petitdej}</div>
+          </div>
+          <div className="colpan">
             <Panier text="Valider mon panier" status="panier vide" />{" "}
           </div>
-          <Title text="Petit déjeuner" />
-
-          <div className="petitdejblock"> {petitdej}</div>
         </div>
       </div>
     );
